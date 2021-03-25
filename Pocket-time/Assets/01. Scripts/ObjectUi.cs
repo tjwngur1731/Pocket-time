@@ -59,7 +59,10 @@ public class ObjectUi : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
     public void OnPointerUp(PointerEventData eventData)
     {
         if (check)
+        {
             object_Drag.transform.position = new Vector3(0, 0, 0);
+            this.gameObject.SetActive(false);
+        }
         else
             object_Drag.SetActive(false);
     }

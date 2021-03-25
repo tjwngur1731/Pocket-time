@@ -36,9 +36,9 @@ public class ObjectController : MonoBehaviour
             Invoke("RotateDelay", .7f);
             transform.DOKill();
             if (isRight)
-                transform.DORotate(new Vector3(0, transform.eulerAngles.y - 90, 0), .5f);
+                transform.DORotate(new Vector3(15, transform.eulerAngles.y - 90, -15), .5f);
             else if (!isRight)
-                transform.DORotate(new Vector3(0, transform.eulerAngles.y + 90, 0), .5f);
+                transform.DORotate(new Vector3(15, transform.eulerAngles.y + 90, -15), .5f);
         }
     }
 
