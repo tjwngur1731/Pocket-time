@@ -7,16 +7,14 @@ public class ObjectController : MonoBehaviour
 {
     private bool isRotate;
 
-    public static ObjectController instance = null;
-    void Awake()
-    {
-        if (instance == null) instance = this;
-
-        else if (instance != this) Destroy(gameObject);
-    }
+    private Vector3 rotate;
 
     void Start()
     {
+        for(int i=1;i<transform.childCount;i++)
+        {
+            transform.GetChild(i).transform.position = new Vector3(Random.Range(-2,2),Random.Range(1,5));
+        }
     }
 
     // Update is called once per frame
@@ -30,15 +28,17 @@ public class ObjectController : MonoBehaviour
 
     public void ObjectRotate(bool isRight)
     {
+        if (isRight) rotate.y = transform.rotation.eulerAngles.y - 90;
+        else rotate.y = transform.rotation.eulerAngles.y + 90;
+
+        Debug.Log(rotate.y);
+
         if (!isRotate)
         {
             isRotate = true;
             Invoke("RotateDelay", .7f);
             transform.DOKill();
-            if (isRight)
-                transform.DORotate(new Vector3(15, transform.eulerAngles.y - 90, -15), .5f);
-            else if (!isRight)
-                transform.DORotate(new Vector3(15, transform.eulerAngles.y + 90, -15), .5f);
+            transform.DORotate(rotate, .5f);
         }
     }
 
