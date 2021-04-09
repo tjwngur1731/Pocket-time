@@ -26,7 +26,10 @@ public class DragAndDrop : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit, LayerMask.NameToLayer("Model")))
+            int layerMask = (1 << LayerMask.NameToLayer("Model"));
+            layerMask = ~layerMask;
+
+            if (Physics.Raycast(ray, out hit, 1000f,layerMask))
             {
                 Debug.Log("ASD");
                 Target = hit.collider.gameObject;
@@ -42,6 +45,7 @@ public class DragAndDrop : MonoBehaviour
             {
                 Target.transform.localPosition = new Vector3(0, 0, 0);
                 Target.layer = 8;
+                check = false;
             }
             _mouseState = false;
 
@@ -54,7 +58,7 @@ public class DragAndDrop : MonoBehaviour
 
             Target.transform.position = curPosition;
 
-            if (Vector3.Distance(Target.transform.position, Vector3.zero) <= limt) check = true;
+            if (Vector3.Distance(Target.transform.localPosition, Vector3.zero) <= limt) check = true;
         }
 
 
