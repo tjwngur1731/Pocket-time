@@ -7,6 +7,9 @@ public class StageSelect : MonoBehaviour
     private string chapter;
     private int stage;
 
+   
+    public GameObject _model;
+
     public static StageSelect instance = null;
 
     void Awake()
@@ -30,10 +33,21 @@ public class StageSelect : MonoBehaviour
 
     public void StartStage()
     {
-        GameObject model = Resources.Load("Prefaps/" + chapter + "/" + chapter + "_" + stage + "_" + "Model") as GameObject;
+        _model = Resources.Load("Prefaps/" + chapter + "/" + chapter + "_" + stage + "_" + "Model") as GameObject;
 
         Debug.Log("Prefaps/" + chapter + "/" + chapter + "_" + stage + "_" + "Model");
 
-        Instantiate(model);
+        GameObject model = Instantiate(_model);
+
+        _model = model;
+
+        Debug.Log(_model.name);
     }
+
+    public GameObject ReturnModel()
+    {
+        return _model;
+    }
+
+
 }

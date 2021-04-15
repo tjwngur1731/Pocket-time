@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7790977548888518709}
   - component: {fileID: 7536997154739995295}
   - component: {fileID: 6126539312133590790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GeoSphere002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,6 +90,8 @@ GameObject:
   - component: {fileID: 2400335171305144315}
   - component: {fileID: 8911536627607829879}
   - component: {fileID: 3405222987181756791}
+  - component: {fileID: 4423456910789153521}
+  - component: {fileID: 8097567521098045225}
   m_Layer: 0
   m_Name: "\uAE30\uB465"
   m_TagString: Untagged
@@ -158,6 +160,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4423456910789153521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4176290043589881693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14935ab20eb8bef4baedd5c92db3083d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTlqkf: 1
+--- !u!65 &8097567521098045225
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4176290043589881693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.56641954, y: 0.5664195, z: 3.0619323}
+  m_Center: {x: -1.2260407, y: 1.1819751, z: 2.20553}
 --- !u!1 &4958911381503891743
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +197,8 @@ GameObject:
   - component: {fileID: 4388884823289648026}
   - component: {fileID: 2084219003768665607}
   - component: {fileID: 6211312493314264594}
+  - component: {fileID: 8013179411030441438}
+  - component: {fileID: 7815396175063724281}
   m_Layer: 0
   m_Name: "\uBC14\uB2E5"
   m_TagString: Untagged
@@ -237,6 +267,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8013179411030441438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958911381503891743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14935ab20eb8bef4baedd5c92db3083d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTlqkf: 0
+--- !u!65 &7815396175063724281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958911381503891743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2536843, y: 3.0288632, z: 0.92081785}
+  m_Center: {x: -1.2260405, y: 0.8312456, z: 0.31605616}
 --- !u!1 &6792089505069886662
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +304,8 @@ GameObject:
   - component: {fileID: 1663231880834472231}
   - component: {fileID: 1223812288691551055}
   - component: {fileID: 6050308921471438800}
+  - component: {fileID: 3095297115449784806}
+  - component: {fileID: 7712395347193221026}
   m_Layer: 0
   m_Name: "\uC1A1\uC804\uD0D1"
   m_TagString: Untagged
@@ -316,6 +374,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3095297115449784806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6792089505069886662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14935ab20eb8bef4baedd5c92db3083d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTlqkf: 0
+--- !u!65 &7712395347193221026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6792089505069886662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9705663, y: 0.9759844, z: 2.91773}
+  m_Center: {x: 1.732014, y: -0.74040323, z: 1.2660929}
 --- !u!1 &7654867507982124028
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +409,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7691413050072539076}
+  - component: {fileID: 9159813499853696073}
   m_Layer: 0
   m_Name: Contemporary_1_Model
   m_TagString: Untagged
@@ -351,6 +436,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9159813499853696073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7654867507982124028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe750cbd5185a6439a2f607c80f7cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8744539888086653739
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +459,8 @@ GameObject:
   - component: {fileID: 4071636198994155714}
   - component: {fileID: 4619517621881303846}
   - component: {fileID: 8577981995455440390}
+  - component: {fileID: 9073558271364975810}
+  - component: {fileID: 3861276118948734239}
   m_Layer: 0
   m_Name: "\uC704\uC5D0"
   m_TagString: Untagged
@@ -430,3 +529,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &9073558271364975810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744539888086653739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14935ab20eb8bef4baedd5c92db3083d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTlqkf: 1
+--- !u!65 &3861276118948734239
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744539888086653739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1310074, y: 1.1310074, z: 2.587286}
+  m_Center: {x: -1.2260408, y: 1.1819752, z: 4.9279327}
