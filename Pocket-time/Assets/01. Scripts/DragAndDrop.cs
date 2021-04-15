@@ -55,9 +55,9 @@ public class DragAndDrop : MonoBehaviour
                     check = false;
                 }else
                 {
-                    for (int i = 0; i < model.transform.GetChildCount(); i++)
+                    for (int i = 0; i < model.transform.childCount; i++)
                     {
-                        if (model.transform.GetChild(i) == model.transform.FindChild(Target.name))
+                        if (model.transform.GetChild(i) == model.transform.Find(Target.name))
                         {
                             ObjectChildNum = i;
                             break;
